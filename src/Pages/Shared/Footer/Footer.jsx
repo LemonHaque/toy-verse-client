@@ -1,12 +1,12 @@
 import logo from "../../../assets/toyLogo.png"
 const Footer = () => {
     return (
-        <footer className="footer shadow footer-center p-10 bg-gray-400  text-white rounded">
+        <footer className="footer shadow footer-center p-10 bg-slate-400  text-white rounded">
 <img className="w-36" src={logo} alt="" />
             <h1 className='text-xl font-bold'>Toy Verse</h1>
             <div className="grid grid-flow-col gap-4">
                 <a className="link link-hover">About us</a>
-                <a className="link link-hover">Contact</a>
+                <a className="link link-hover">Contact us</a>
                 <a className="link link-hover">Toys</a>
                 <a className="link link-hover">Address</a>
             </div>
