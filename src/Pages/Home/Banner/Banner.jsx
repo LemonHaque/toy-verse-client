@@ -1,4 +1,3 @@
-
 import bg2 from "../../../assets/2.jpg"
 import bg3 from "../../../assets/3.jpg"
 import bg4 from "../../../assets/4.jpg"
@@ -6,10 +5,10 @@ import bg5 from "../../../assets/5.jpg"
 const Banner = () => {
     return (
         <div>
-            <div className="carousel max-h-[600px]">
+            <div className="carousel max-h-[630px] rounded">
                 <div id="item1" className="carousel-item relative w-full">
 
-                    <img src={bg2} className="w-full" />
+                    <img src={bg2} className="w-full rounded" />
                     <div className="absolute h-full bg-gradient-to-t from-[#151515] to-[rgba(71,7,92,0.22)]  text-center">
                         <div className="p-10 md:px-36 md:pt-36">
                             <h2 className="text-2xl  md:text-5xl  font-bold text-white">Let the Adventure Beign With</h2>
