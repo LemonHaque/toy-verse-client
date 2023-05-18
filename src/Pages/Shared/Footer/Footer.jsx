@@ -1,7 +1,7 @@
 import logo from "../../../assets/toyLogo.png"
 const Footer = () => {
     return (
-        <footer className="footer shadow footer-center p-10 bg-slate-400  text-white rounded">
+        <footer className="footer shadow footer-center p-10 bg-black  text-white rounded">
 <img className="w-36" src={logo} alt="" />
             <h1 className='text-xl font-bold'>Toy Verse</h1>
             <div className="grid grid-flow-col gap-4">

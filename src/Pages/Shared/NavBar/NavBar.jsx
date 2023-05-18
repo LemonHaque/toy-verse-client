@@ -2,16 +2,16 @@ import { NavLink } from "react-router-dom";
 import logo from '../../../assets/toyLogo.png'
 
 const NavBar = () => {
-    const navItems = <>
-        <NavLink to='/' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>Home</a></li> </NavLink>
-        <NavLink to='/alltoys' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>All Toys</a></li> </NavLink>
-        <NavLink to='/mytoys' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>My Toys</a></li> </NavLink>
-        <NavLink to='/addatoy' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>Add a Toy</a></li> </NavLink>
-        <NavLink to='/blog' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}><li><a>Blogs</a></li></NavLink>
-
-    </>
+    const navItems =
+        <>
+            <NavLink to='/' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>Home</a></li> </NavLink>
+            <NavLink to='/alltoys' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>All Toys</a></li> </NavLink>
+            <NavLink to='/mytoys' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>My Toys</a></li> </NavLink>
+            <NavLink to='/addatoy' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>Add a Toy</a></li> </NavLink>
+            <NavLink to='/blog' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}><li><a>Blogs</a></li></NavLink>
+        </>
     return (
-        <div className="navbar px-16 bg-indigo-100 shadow top-0 rounded">
+        <div className="navbar px-16 shadow top-0 rounded ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -29,11 +29,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-5">
-
-
-
-
-                <NavLink className='btn  bg-purple-500 shadow-lg shadow-purple-500/100 hover:bg-purple-800 text-white font-semibold rounded-lg'>Log out
+                <NavLink className='btn bg-purple-500 shadow-lg shadow-purple-500/100 hover:bg-purple-800 text-white font-semibold rounded-lg'>Log out
                 </NavLink>
                 <NavLink to='/login' className='btn bg-purple-500 shadow-lg shadow-purple-500/100 hover:bg-purple-800 text-white font-semibold rounded-lg'>  Login
                 </NavLink>
