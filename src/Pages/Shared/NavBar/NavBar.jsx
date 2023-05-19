@@ -8,7 +8,7 @@ const NavBar = () => {
             <NavLink to='/alltoys' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>All Toys</a></li> </NavLink>
             <NavLink to='/mytoys' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>My Toys</a></li> </NavLink>
             <NavLink to='/addatoy' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>Add a Toy</a></li> </NavLink>
-            <NavLink to='/blog' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}><li><a>Blogs</a></li></NavLink>
+            <NavLink to='/blogs' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}><li><a>Blogs</a></li></NavLink>
         </>
     return (
         <div className="navbar px-16 shadow top-0 rounded ">
@@ -21,7 +21,9 @@ const NavBar = () => {
                         {navItems}
                     </ul>
                 </div>
-                <NavLink to='/'><img src={logo} className="w-28 border text-bold rounded-lg"></img></NavLink>
+                <NavLink to='/'><img src={logo} className="w-20 text-bold rounded-lg"></img></NavLink>
+
+                <NavLink to='/'><p className="font-bold text-xl">ToyVerse</p></NavLink>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

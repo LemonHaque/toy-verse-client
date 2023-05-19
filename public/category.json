@@ -1,0 +1,101 @@
+[
+  {
+    "_id": 1,
+    "sub_category": "Sports car",
+    "toyName": "Ferrari 488 GTB",
+    "email": "example1@example.com",
+    "quantity": 5,
+    "picture": "https://i.ibb.co/ZMnr7ft/car1.jpg",
+    "sellerName": "John Doe",
+    "price": 199.99,
+    "rating": 4.5
+  },
+  {
+    "_id": 2,
+    "sub_category": "Sports car",
+    "toyName": "Lamborghini Huracan",
+    "email": "example2@example.com",
+    "quantity": 3,
+    "picture": "https://i.ibb.co/DR3VhTZ/car2.jpg",
+    "sellerName": "Jane Smith",
+    "price": 249.99,
+    "rating": 4.8
+  },
+  {
+    "_id": 3,
+    "sub_category": "Sports car",
+    "toyName": "Porsche 911",
+    "email": "example3@example.com",
+    "quantity": 2,
+    "picture": "https://i.ibb.co/fXwbY11/car3.jpg",
+    "sellerName": "Mike Johnson",
+    "price": 179.99,
+    "rating": 4.2
+  },
+  {
+    "_id": 4,
+    "sub_category": "Normal car",
+    "toyName": "Toyota Camry",
+    "email": "example4@example.com",
+    "quantity": 7,
+    "picture": "https://i.ibb.co/vd9867g/car4.jpg",
+    "sellerName": "Sarah Johnson",
+    "price": 149.99,
+    "rating": 4.6
+  },
+  {
+    "_id": 5,
+    "sub_category": "Normal car",
+    "toyName": "Honda Civic",
+    "email": "example5@example.com",
+    "quantity": 4,
+    "picture": "https://i.ibb.co/KGjrM2J/car5.jpg",
+    "sellerName": "Dav_id Thompson",
+    "price": 139.99,
+    "rating": 4.4
+  },
+  {
+    "_id": 6,
+    "sub_category": "Normal car",
+    "toyName": "Ford Mustang",
+    "email": "example6@example.com",
+    "quantity": 6,
+    "picture": "https://i.ibb.co/BPPX3LP/car6.webp",
+    "sellerName": "Emily Davis",
+    "price": 159.99,
+    "rating": 4.7
+  },
+  {
+    "_id": 7,
+    "sub_category": "SUV",
+    "toyName": "Jeep Wrangler",
+    "email": "example7@example.com",
+    "quantity": 3,
+    "picture": "https://i.ibb.co/2v0kPXh/car7.jpg",
+    "sellerName": "Michael Anderson",
+    "price": 179.99,
+    "rating": 4.5
+  },
+  {
+    "_id": 8,
+    "sub_category": "SUV",
+    "toyName": "Lamborghini URUS",
+    "email": "example8@example.com",
+    "quantity": 5,
+    "picture": "https://i.ibb.co/3FDfcpV/car8.jpg",
+    "sellerName": "Jessica Wilson",
+    "price": 199.99,
+    "rating": 4.3
+  },
+  {
+    "_id": 9,
+    "sub_category": "SUV",
+    "toyName": "Range Rover",
+    "email": "example9@example.com",
+    "quantity": 2,
+    "picture": "https://i.ibb.co/Zc9GgM1/car9.webp",
+    "sellerName": "Daniel Thompson",
+    "price": 209.99,
+    "rating": 4.7
+  }
+]
