@@ -1,6 +1,5 @@
 [
   {
-    "_id": 1,
     "sub_category": "Sports car",
     "toyName": "Ferrari 488 GTB",
     "email": "example1@example.com",
@@ -11,7 +10,6 @@
     "rating": 4.5
   },
   {
-    "_id": 2,
     "sub_category": "Sports car",
     "toyName": "Lamborghini Huracan",
     "email": "example2@example.com",
@@ -22,7 +20,6 @@
     "rating": 4.8
   },
   {
-    "_id": 3,
     "sub_category": "Sports car",
     "toyName": "Porsche 911",
     "email": "example3@example.com",
@@ -33,7 +30,6 @@
     "rating": 4.2
   },
   {
-    "_id": 4,
     "sub_category": "Normal car",
     "toyName": "Toyota Camry",
     "email": "example4@example.com",
@@ -44,7 +40,6 @@
     "rating": 4.6
   },
   {
-    "_id": 5,
     "sub_category": "Normal car",
     "toyName": "Honda Civic",
     "email": "example5@example.com",
@@ -55,7 +50,6 @@
     "rating": 4.4
   },
   {
-    "_id": 6,
     "sub_category": "Normal car",
     "toyName": "Ford Mustang",
     "email": "example6@example.com",
@@ -66,7 +60,6 @@
     "rating": 4.7
   },
   {
-    "_id": 7,
     "sub_category": "SUV",
     "toyName": "Jeep Wrangler",
     "email": "example7@example.com",
@@ -77,7 +70,6 @@
     "rating": 4.5
   },
   {
-    "_id": 8,
     "sub_category": "SUV",
     "toyName": "Lamborghini URUS",
     "email": "example8@example.com",
@@ -88,7 +80,6 @@
     "rating": 4.3
   },
   {
-    "_id": 9,
     "sub_category": "SUV",
     "toyName": "Range Rover",
     "email": "example9@example.com",
