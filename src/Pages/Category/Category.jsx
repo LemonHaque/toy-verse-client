@@ -9,7 +9,7 @@ const Category = () => {
 const [active,setActive] = useState('Sport Car')
 
     useEffect(() => {
-        fetch('category.json')
+        fetch(`http://localhost:5000/car`)
             .then(res => res.json())
             .then(data => setCategories(data));
     }, [active])
