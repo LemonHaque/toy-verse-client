@@ -1,10 +1,15 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "../../firebase/firebase.config";
 
 const Login = () => {
 
     const { signIn } = useContext(AuthContext);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || '/';
@@ -17,6 +22,17 @@ const Login = () => {
         console.log(email, password);
 
         signIn(email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                navigate(from, { replace: true })
+            })
+            .catch(error => console.log(error))
+    }
+
+    const handleGoogleSignIn = (event) => {
+        event.preventDefault();
+        signInWithPopup(auth, provider)
             .then(result => {
                 const user = result.user;
                 console.log(user);
@@ -48,7 +64,7 @@ const Login = () => {
                         </div>
                         <button className='w-full my-5 py-2 bg-purple-500 shadow-lg shadow-purple-500/50 hover:shadow-purple-500/40 text-white font-semibold rounded-lg'>Login</button>
                         <div className='text-center flex flex-col gap-3 mx-8 mb-2'>
-                            <button className="btn btn-outline hover:bg-purple-600"> Sign in with Google</button>
+                            <button onClick={handleGoogleSignIn} className="btn btn-outline hover:bg-purple-600"> Sign in with Google</button>
 
 
                         </div>
