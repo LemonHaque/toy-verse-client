@@ -5,7 +5,8 @@ const AllToys = () => {
 
 
     const toys = useLoaderData();
-
+    const limit = 20;
+    const visibleToys = toys.slice(0, limit);
 
 
     return (
@@ -32,7 +33,7 @@ const AllToys = () => {
                     </thead>
                     <tbody>
                         {
-                          toys.map(car => <AllToysRow
+                          visibleToys.map(car => <AllToysRow
                           key={car._id}
                           car={car}
                           ></AllToysRow>)  
@@ -46,17 +47,5 @@ const AllToys = () => {
     );
 };
 
-{/* <div className="card card-side w-2/3 mx-auto h-66 bg-purple-100 shadow border rounded mb-6 p-4">
-                            <figure><img className="w-64" src={toy.picture} alt="Movie" /></figure>
-                            <div className="card-body">
-                                <h2 className="card-title">{toy.toyName}</h2>
-                                <p>Seller: {toy.sellerName}</p>
-                                <p>Sub Category: {toy.subCatgory}</p>
-                                <p>Available Quantity: {toy.quantity}</p>
-                                <div className="my-2">
-                               <button className="btn className='btn bg-purple-500 shadow-lg shadow-purple-500/100 hover:bg-purple-800 text-white font-semibold rounded-lg mr-6">View Details</button>
-                                </div>
-                            </div>
-                        </div> */}
 
 export default AllToys;
