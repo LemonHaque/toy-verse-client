@@ -7,7 +7,7 @@ const NavBar = () => {
             <NavLink to='/' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>Home</a></li> </NavLink>
             <NavLink to='/alltoys' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>All Toys</a></li> </NavLink>
             <NavLink to='/mytoys' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>My Toys</a></li> </NavLink>
-            <NavLink to='/addatoy' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>Add a Toy</a></li> </NavLink>
+            <NavLink to='/addtoy' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>Add a Toy</a></li> </NavLink>
             <NavLink to='/blogs' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}><li><a>Blogs</a></li></NavLink>
         </>
     return (

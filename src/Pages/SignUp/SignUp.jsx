@@ -4,7 +4,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 
 const SignUp = () => {
 
-const {createUser} = useContext(AuthContext);
+    const { createUser } = useContext(AuthContext);
 
     const handleSignUp = event => {
         event.preventDefault();
@@ -12,7 +12,8 @@ const {createUser} = useContext(AuthContext);
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(name, email, password);
+        const photo = form.photo.value;
+        console.log(name, email, password, photo);
 
         createUser(email, password)
             .then(result => {
@@ -43,6 +44,10 @@ const {createUser} = useContext(AuthContext);
                         <div className='flex flex-col py-2'>
                             <label>Confirm Password</label>
                             <input className='p-2 rounded-lg border mt-2 focus:border-red-500 focus:outline-none' type="password" name='password' required />
+                        </div>
+                        <div className='flex flex-col py-2'>
+                            <label>Photo URL</label>
+                            <input className='p-2 rounded-lg border mt-2 focus:border-red-500 focus:outline-none' type="text" name='photo' required />
                         </div>
                         <div className='flex justify-between py-2'>
                             <p className='flex items-center'><input className='mr-2 bg-red-400' type="checkbox" /> Remember Me</p>
