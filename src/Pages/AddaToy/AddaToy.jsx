@@ -5,7 +5,7 @@ const AddaToy = () => {
         event.preventDefault();
 
         const form = event.target;
-        const name = form.name.value;
+        const toyName = form.toyName.value;
         const picture = form.picture.value;
         const sellerEmail = form.selleremail.value;
         const sellerName = form.sellername.value;
@@ -16,7 +16,7 @@ const AddaToy = () => {
         const details = form.details.value;
 
 
-        const newToy = { name, picture, sellerEmail, sellerName, subCategory, price, rating, quantity, details }
+        const newToy = { toyName, picture, sellerEmail, sellerName, subCategory, price, rating, quantity, details }
         console.log(newToy);
 
         // send the data to the server
@@ -55,7 +55,7 @@ const AddaToy = () => {
                         </label>
                         <label className="input-group">
                             <span></span>
-                            <input type="text" name="name" placeholder="Toy Name" className="input input-bordered w-full" />
+                            <input type="text" name="toyName" placeholder="Toy Name" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2">
@@ -140,7 +140,7 @@ const AddaToy = () => {
                     </div>
                     {/* <div className="form-control md:w-1/2">
                         <label className="label">
-                            <span className="label-text"> Details</span>
+                            <span className="label-text"> Category</span>
                         </label>
                         <label className="input-group">
                         <span></span>

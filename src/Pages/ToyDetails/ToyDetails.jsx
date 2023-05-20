@@ -2,10 +2,11 @@ import { useLoaderData } from "react-router-dom";
 
 const ToyDetails = () => {
     const cars = useLoaderData()
-    const {toyName,_id, picture}= cars;
+    const {toyName, picture, _id}= cars;
+    
     return (
         <div>
-            <h2>Toy name :{toyName}</h2>
+           <h2>Toy name :{toyName}</h2>
         </div>
     );
 };
