@@ -55,7 +55,7 @@ const SignUp = () => {
                         </div>
                         <button className='w-full my-5 py-2 bg-purple-500 shadow-lg shadow-purple-500/50 hover:shadow-purple-500/40 text-white font-semibold rounded-lg'>Sign Up</button>
                         <div className='text-center flex flex-col gap-3 mx-8 mb-2'>
-                            <button className="btn btn-outline hover:bg-purple-600"> Sign in with Google</button>
+                            
 
 
                         </div>

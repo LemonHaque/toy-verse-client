@@ -10,13 +10,14 @@ const AddaToy = () => {
         const sellerEmail = form.selleremail.value;
         const sellerName = form.sellername.value;
         const subCategory = form.subcategory.value;
+        const category = form.category.value;
         const price = form.price.value;
         const rating = form.rating.value;
         const quantity = form.quantity.value;
         const details = form.details.value;
 
 
-        const newToy = { toyName, picture, sellerEmail, sellerName, subCategory, price, rating, quantity, details }
+        const newToy = { toyName, picture, sellerEmail, sellerName, subCategory, price, rating, quantity, details,category }
         console.log(newToy);
 
         // send the data to the server
@@ -138,15 +139,15 @@ const AddaToy = () => {
                             <input type="text" name="details" placeholder="Details" className="input input-bordered w-full" />
                         </label>
                     </div>
-                    {/* <div className="form-control md:w-1/2">
+                    <div className="form-control md:w-1/2">
                         <label className="label">
                             <span className="label-text"> Category</span>
                         </label>
                         <label className="input-group">
                         <span></span>
-                            <input type="text" name="details" placeholder="URL" className="input input-bordered w-full" />
+                            <input type="text" name="category" placeholder="Category" className="input input-bordered w-full" />
                         </label>
-                    </div> */}
+                    </div>
                 </div>
                 <div>
                     <button className="w-full my-10 py-2 bg-purple-500 shadow-lg shadow-purple-500/50 hover:shadow-purple-500/40 text-white font-semibold rounded-lg">Add Toy</button>

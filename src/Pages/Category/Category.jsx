@@ -6,7 +6,7 @@ import CategoryCard from './CategoryCard/CategoryCard';
 
 const Category = () => {
     const [categories, setCategories] = useState([]);
-    const [active, setActive] = useState('Sports Car')
+    const [active, setActive] = useState('Sports')
 
     useEffect(() => {
         fetch(`http://localhost:5000/car/${active}`)

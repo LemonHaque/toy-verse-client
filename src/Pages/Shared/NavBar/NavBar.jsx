@@ -1,7 +1,17 @@
 import { NavLink } from "react-router-dom";
 import logo from '../../../assets/toyLogo.png'
+import { useContext } from "react";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const NavBar = () => {
+const {user, logOut}= useContext(AuthContext)
+
+const handleLogOut =()=>{
+    logOut()
+    .then()
+    .catch(error => console.log(error))
+}
+
     const navItems =
         <>
             <NavLink to='/' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>Home</a></li> </NavLink>
@@ -31,10 +41,12 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-5">
-                <NavLink className='btn bg-purple-500 shadow-lg shadow-purple-500/100 hover:bg-purple-800 text-white font-semibold rounded-lg'>Log out
-                </NavLink>
-                <NavLink to='/login' className='btn bg-purple-500 shadow-lg shadow-purple-500/100 hover:bg-purple-800 text-white font-semibold rounded-lg'>  Login
-                </NavLink>
+               { user ?<NavLink>
+                <button onClick={handleLogOut} className="btn btn-outline hover:bg-purple-600 ">Log Out</button>
+               </NavLink> :
+               <NavLink to={'/login'}>
+                <button className="btn  bg-purple-500 shadow-lg shadow-purple-500/100 hover:bg-purple-800 text-white font-semibold">Login</button>
+               </NavLink>}
             </div>
         </div>
     );

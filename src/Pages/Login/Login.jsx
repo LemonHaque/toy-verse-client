@@ -1,11 +1,13 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
 const Login = () => {
 
-
     const { signIn } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
 
     const handleLogin = event => {
         event.preventDefault();
@@ -18,6 +20,7 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                navigate(from, { replace: true })
             })
             .catch(error => console.log(error))
     }
@@ -33,11 +36,11 @@ const Login = () => {
                         <h2 className='text-4xl dark:text-white font-bold text-center'>Login</h2>
                         <div className='flex flex-col py-2'>
                             <label>Email Address</label>
-                            <input className='rounded-lg border mt-2 p-2 focus:border-red-500 focus:outline-none' type="text" name='email' required />
+                            <input className='rounded-lg border mt-2 p-2 focus:border-purple-500 focus:outline-none' type="text" name='email' required />
                         </div>
                         <div className='flex flex-col py-2'>
                             <label>Password</label>
-                            <input className='p-2 rounded-lg border mt-2 focus:border-red-500 focus:outline-none' type="password" name='password' required />
+                            <input className='p-2 rounded-lg border mt-2 focus:border-purple-500 focus:outline-none' type="password" name='password' required />
                         </div>
                         <div className='flex justify-between py-2'>
                             <p className='flex items-center'><input className='mr-2 bg-red-400' type="checkbox" /> Remember Me</p>
@@ -49,7 +52,7 @@ const Login = () => {
 
 
                         </div>
-                        <p className='text-center'>Don't have an account? <Link className='text-blue-500' to='/signup'>Sign Up</Link></p>
+                        <p className='text-center'>Do not have an account? <Link className='text-blue-500' to='/signup'>Sign Up</Link></p>
 
                         <p className='text-red-500'></p>
                         <p className='text-blue-500'></p>
