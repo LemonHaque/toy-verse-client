@@ -6,28 +6,26 @@ import CategoryCard from './CategoryCard/CategoryCard';
 
 const Category = () => {
     const [categories, setCategories] = useState([]);
-const [active,setActive] = useState('Sport Car')
+    const [active, setActive] = useState('Sports Car')
 
     useEffect(() => {
-        fetch(`http://localhost:5000/car`)
+        fetch(`http://localhost:5000/car/${active}`)
             .then(res => res.json())
             .then(data => setCategories(data));
     }, [active])
 
     const handleSportCar = (event) => {
         event.preventDefault();
-    
-        setActive('Sports car');
+        setActive('Sports');
     }
 
     const handleNormalCar = (event) => {
-        event.preventDefault(); 
-        setActive('Normal car');
+        event.preventDefault();
+        setActive('Normal');
     }
 
     const handleSuv = (event) => {
         event.preventDefault();
-       
         setActive('SUV');
 
     }
@@ -40,11 +38,11 @@ const [active,setActive] = useState('Sport Car')
             <p className='mb-8'>Here you can find your favorite cars that has arranged by your favourite category</p>
 
             <Tabs>
-              
+
                 <TabList>
                     <Tab onClick={handleSportCar}>Sports Car</Tab>
-                    <Tab onClick={handleNormalCar}>Suv</Tab>
-                    <Tab onClick={handleSuv}>MIni Fire Truck</Tab>
+                    <Tab onClick={handleNormalCar}>Normal Car</Tab>
+                    <Tab onClick={handleSuv}>Suv</Tab>
                 </TabList>
 
                 <TabPanel>
