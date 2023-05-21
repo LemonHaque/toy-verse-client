@@ -7,6 +7,7 @@ import CategoryCard from './CategoryCard/CategoryCard';
 const Category = () => {
     const [categories, setCategories] = useState([]);
     const [active, setActive] = useState('Sports')
+    console.log(categories);
 
     useEffect(() => {
         fetch(`https://toy-verse-server-delta.vercel.app/car/${active}`)

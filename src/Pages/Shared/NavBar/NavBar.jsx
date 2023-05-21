@@ -56,7 +56,7 @@ const NavBar = () => {
             <div className="navbar-end gap-5">
                 {user && (
                     <div className="relative inline-block mx-4">
-                        <img src={user.photoURL} alt="Profile" className="rounded-full h-10 w-10 cursor-pointer hover:opacity-75  hover:{user.displayName}" title={user.displayName} />
+                        <img src={user.photoURL} alt="Profile" className="rounded-full h-12 w-12 cursor-pointer hover:opacity-90" title={user.displayName} />
                         </div> 
                 )}
 
