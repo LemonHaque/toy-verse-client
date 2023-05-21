@@ -21,7 +21,7 @@ const AddaToy = () => {
         console.log(newToy);
 
         // send the data to the server
-        fetch('http://localhost:5000/toy', {
+        fetch('https://toy-verse-server-delta.vercel.app/toy', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -4,22 +4,33 @@ import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 
 const NavBar = () => {
-const {user, logOut}= useContext(AuthContext)
+    const { user, logOut } = useContext(AuthContext)
 
-const handleLogOut =()=>{
-    logOut()
-    .then()
-    .catch(error => console.log(error))
-}
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch(error => console.log(error))
+    }
+
+
 
     const navItems =
         <>
             <NavLink to='/' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>Home</a></li> </NavLink>
+
             <NavLink to='/alltoys' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>All Toys</a></li> </NavLink>
-            <NavLink to='/mytoys' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>My Toys</a></li> </NavLink>
-            <NavLink to='/addtoy' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>Add a Toy</a></li> </NavLink>
+
+            {user ? <>
+                <NavLink to='/mytoys' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>My Toys</a></li> </NavLink>
+
+                <NavLink to='/addtoy' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}> <li><a>Add a Toy</a></li> </NavLink>
+            </> : ""}
+
             <NavLink to='/blogs' className={({ isActive }) => (isActive ? 'text-purple-700 font-semibold' : '')}><li><a>Blogs</a></li></NavLink>
         </>
+
+
+
     return (
         <div className="navbar px-16 shadow top-0 rounded ">
             <div className="navbar-start">
@@ -40,16 +51,24 @@ const handleLogOut =()=>{
                     {navItems}
                 </ul>
             </div>
+
+
             <div className="navbar-end gap-5">
-               { user ?<NavLink>
-                <button onClick={handleLogOut} className="btn btn-outline hover:bg-purple-600 ">Log Out</button>
-               </NavLink> :
-               <NavLink to={'/login'}>
-                <button className="btn  bg-purple-500 shadow-lg shadow-purple-500/100 hover:bg-purple-800 text-white font-semibold">Login</button>
-               </NavLink>}
-            </div>
+                {user && (
+                    <div className="relative inline-block mx-4">
+                        <img src={user.photoURL} alt="Profile" className="rounded-full h-10 w-10 cursor-pointer hover:opacity-75  hover:{user.displayName}" title={user.displayName} />
+                        </div> 
+                )}
+
+                        {user ? <NavLink>
+                            <button onClick={handleLogOut} className="btn btn-outline hover:bg-purple-600 ">Log Out</button>
+                        </NavLink> :
+                            <NavLink to='/login'>
+                                <button className="btn  bg-purple-500 shadow-lg shadow-purple-500/100 hover:bg-purple-800 text-white font-semibold">Login</button>
+                            </NavLink>}
+                    </div>
         </div>
-    );
+            );
 };
 
-export default NavBar;
+            export default NavBar;

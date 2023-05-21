@@ -9,7 +9,7 @@ const Category = () => {
     const [active, setActive] = useState('Sports')
 
     useEffect(() => {
-        fetch(`http://localhost:5000/car/${active}`)
+        fetch(`https://toy-verse-server-delta.vercel.app/car/${active}`)
             .then(res => res.json())
             .then(data => setCategories(data));
     }, [active])

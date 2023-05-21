@@ -1,15 +1,13 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
-import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
-import app from "../../firebase/firebase.config";
+import img from "../../assets/login.png"
+
+
 
 const Login = () => {
 
-    const { signIn } = useContext(AuthContext);
-    const auth = getAuth(app);
-    const provider = new GoogleAuthProvider();
-
+    const { signIn, signInWithGoogle } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || '/';
@@ -32,24 +30,28 @@ const Login = () => {
 
     const handleGoogleSignIn = (event) => {
         event.preventDefault();
-        signInWithPopup(auth, provider)
-            .then(result => {
-                const user = result.user;
-                console.log(user);
-                navigate(from, { replace: true })
+
+        signInWithGoogle()
+            .then(() => {
+                navigate(from, { replace: true });
             })
-            .catch(error => console.log(error))
-    }
+            .catch(error => console.log(error));
+    };
+
 
 
     return (
         <div>
-
-            <div className='my-20'>
+             <h2 className='text-5xl text-purple-600 my-6 font-bold text-center'>Login</h2>
+            <div  className=" md:flex md:justify-between w-full">
+            <div className="w-1/2 h-1/2 mx-auto">
+                <img src={img} alt="" />
+            </div>
+            <div className="w-1/2 h-1/2 mx-auto">
 
                 <div className=' flex flex-col justify-center'>
                     <form onSubmit={handleLogin} className='max-w-[400px] w-full mx-auto rounded-lg shadow-xl p-8 px-8'>
-                        <h2 className='text-4xl dark:text-white font-bold text-center'>Login</h2>
+                        
                         <div className='flex flex-col py-2'>
                             <label>Email Address</label>
                             <input className='rounded-lg border mt-2 p-2 focus:border-purple-500 focus:outline-none' type="text" name='email' required />
@@ -76,6 +78,7 @@ const Login = () => {
                     </form>
                 </div>
             </div>
+        </div>
         </div>
     );
 };
