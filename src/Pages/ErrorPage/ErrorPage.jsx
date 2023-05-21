@@ -11,10 +11,11 @@ const ErrorPage = () => {
                 <Link to='/' className='btn w-full bg-purple-500 shadow-lg shadow-purple-500/100 hover:bg-purple-800 text-white font-semibold'>
                     Back to homepage
                 </Link>
-            </div>
-            <p className='text-2xl font-semibold md:text-4xl text-red-700 mb-8'>
+                <p className='mt-6 text-2xl font-semibold md:text-4xl text-purple-600 mb-8'>
                 {error?.message}
             </p>
+            </div>
+            
 
 
 

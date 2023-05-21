@@ -10,12 +10,13 @@ import AllToys from "../Pages/AllToys/AllToys";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import MyToys from "../Pages/MyToys/MyToys";
+import UpdateToys from "../Pages/MyToys/UpdateToys";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
-        errorElement:<ErrorPage></ErrorPage>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/mytoys',
-                element: <PrivateRoute><MyToys></MyToys></PrivateRoute>,
+                element: <PrivateRoute><MyToys></MyToys></PrivateRoute>
             },
             {
                 path: '/alltoys',
@@ -47,8 +48,13 @@ const router = createBrowserRouter([
                 loader: () => fetch('https://toy-verse-server-delta.vercel.app/toy')
             },
             {
+                path: '/updatetoys/:id',
+                element: <UpdateToys></UpdateToys>,
+                loader: ({ params }) => fetch(`http://localhost:5000/toy/${params.id}`)
+            },
+            {
                 path: '/toy/:id',
-                element:<PrivateRoute> <ToyDetails></ToyDetails></PrivateRoute>,
+                element: <PrivateRoute> <ToyDetails></ToyDetails></PrivateRoute>,
                 loader: ({ params }) => fetch(`https://toy-verse-server-delta.vercel.app/singleCar/${params.id}`)
             }
         ]

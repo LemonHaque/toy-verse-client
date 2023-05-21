@@ -10,7 +10,7 @@ const [toys,setToys]= useState([]);
         fetch(`http://localhost:5000/toy/${user?.email}`)
         .then((res) => res.json())
         .then((data) => {
-            setToys(data)})
+           setToys(data)})
 
     },[user])
     return (
@@ -24,14 +24,14 @@ const [toys,setToys]= useState([]);
           {/* head */}
           <thead>
             <tr>
-              <th></th>
+              <th>Delete</th>
               <th>Image</th>
               <th>Seller Name</th>
               <th>Toy Name</th>
               <th>Sub Category</th>
               <th>Available Quantity</th>
               <th>Price</th>
-              <th></th>
+              <th>Update Toy Data</th>
               <th></th>
             </tr>
           </thead>
