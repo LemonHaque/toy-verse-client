@@ -17,7 +17,7 @@ const MyToysRow = ({ toy }) => {
         }).then((result) => {
             if (result.isConfirmed) {
                 //  
-                fetch(`http://localhost:5000/toy/${_id}`,{
+                fetch(`https://toy-verse-server-delta.vercel.app/toy/${_id}`,{
                     method: "DELETE",
                 })
                     .then(res => res.json())
@@ -61,7 +61,7 @@ const MyToysRow = ({ toy }) => {
             <td>{quantity}</td>
             <td>${price}</td>
             <th>
-                <Link to={`updatetoys/${_id}`} className="btn bg-purple-500 shadow shadow-purple-500/100 hover:bg-purple-800 text-white font-semibold">Update</Link>
+                <Link to={`/updatetoys/${_id}`} className="btn bg-purple-500 shadow shadow-purple-500/100 hover:bg-purple-800 text-white font-semibold">Update</Link>
             </th>
         </tr>
     );

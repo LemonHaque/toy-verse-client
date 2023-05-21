@@ -50,7 +50,7 @@ const router = createBrowserRouter([
             {
                 path: '/updatetoys/:id',
                 element: <UpdateToys></UpdateToys>,
-                loader: ({ params }) => fetch(`http://localhost:5000/toy/${params.id}`)
+                loader: ({ params }) => fetch(`https://toy-verse-server-delta.vercel.app/toy/${params.id}`)
             },
             {
                 path: '/toy/:id',

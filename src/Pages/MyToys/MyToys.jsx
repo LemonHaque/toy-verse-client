@@ -7,7 +7,7 @@ const {user} = useContext(AuthContext);
 const [toys,setToys]= useState([]);
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/toy/${user?.email}`)
+        fetch(`https://toy-verse-server-delta.vercel.app/toy/${user?.email}`)
         .then((res) => res.json())
         .then((data) => {
            setToys(data)})
