@@ -8,10 +8,10 @@ const Banner = () => {
             <div className="carousel max-h-[630px] rounded">
                 <div id="item1" className="carousel-item relative w-full">
 
-                    <img src={bg2} className="w-full rounded" />
-                    <div className="absolute h-full bg-gradient-to-t from-[#151515] to-[rgba(71,7,92,0.22)]  text-center">
+                    <img src={bg3} className="w-full rounded" />
+                    <div className="absolute h-full bg-gradient-to-b from-[#000000] to-[rgba(0,0,0,0.22)]  text-center">
                         <div className="p-10 md:px-36 md:pt-36">
-                            <h2 className="text-2xl  md:text-5xl  font-bold text-white">Let the Adventure Beign With</h2>
+                            <h2 className="text-2xl  md:text-5xl md:my-8 font-bold text-white">Let the Adventure Beign With</h2>
                             <h1 className="text-4xl md:text-7xl font-bold text-purple-600">Toy Verse Cars</h1>
                             <p className="pt-1 md:pt-6 text-white">Get ready to embark on a playful journey that will transform your toy store into a destination that kids and kids-at-heart can't wait to visit. Let's dive in and discover the power of simple yet captivating words that will make your toy store stand out!</p>
                         </div>
@@ -24,10 +24,10 @@ const Banner = () => {
                 </div>
                 <div id="item2" className="carousel-item relative w-full">
 
-                    <img src={bg3} className="w-full" />
-                    <div className="absolute h-full bg-gradient-to-t from-[#151515] to-[rgba(71,7,92,0.22)]  text-center">
+                    <img src={bg2} className="w-full" />
+                    <div className="absolute h-full bg-gradient-to-b from-[#000000] to-[rgba(0,0,0,0.22)]  text-center">
                         <div className="p-10 md:px-36 md:pt-36">
-                            <h2 className="text-2xl  md:text-5xl  font-bold text-white">Let the Adventure Beign With</h2>
+                            <h2 className="text-2xl  md:text-5xl md:my-8 font-bold text-white">Let the Adventure Beign With</h2>
                             <h1 className="text-4xl md:text-7xl font-bold text-purple-600">Toy Verse Cars</h1>
                             <p className="pt-1 md:pt-6 text-white ">Get ready to embark on a playful journey that will transform your toy store into a destination that kids and kids-at-heart can't wait to visit. Let's dive in and discover the power of simple yet captivating words that will make your toy store stand out!</p>
                         </div>
@@ -41,9 +41,9 @@ const Banner = () => {
                 <div id="item3" className="carousel-item relative w-full">
 
                     <img src={bg4} className="w-full" />
-                    <div className="absolute h-full bg-gradient-to-t from-[#151515] to-[rgba(71,7,92,0.22)]  text-center">
+                    <div className="absolute h-full bg-gradient-to-b from-[#000000] to-[rgba(0,0,0,0.22)]  text-center">
                         <div className="p-10 md:px-36 md:pt-36">
-                            <h2 className="text-2xl  md:text-5xl  font-bold text-white">Let the Adventure Beign With</h2>
+                            <h2 className="text-2xl  md:text-5xl md:my-8 font-bold text-white">Let the Adventure Beign With</h2>
                             <h1 className="text-4xl md:text-7xl font-bold text-purple-600">Toy Verse Cars</h1>
                             <p className="pt-1 md:pt-6 text-white ">Get ready to embark on a playful journey that will transform your toy store into a destination that kids and kids-at-heart can't wait to visit. Let's dive in and discover the power of simple yet captivating words that will make your toy store stand out!</p>
                         </div>
@@ -57,9 +57,9 @@ const Banner = () => {
                 <div id="item4" className="carousel-item relative w-full">
 
                     <img src={bg5} className="w-full" />
-                    <div className="absolute h-full bg-gradient-to-t from-[#151515] to-[rgba(71,7,92,0.22)]  text-center">
+                    <div className="absolute h-full bg-gradient-to-b from-[#000000] to-[rgba(0,0,0,0.22)]  text-center">
                         <div className="p-10 md:px-36 md:pt-36">
-                            <h2 className="text-2xl  md:text-5xl  font-bold text-white">Let the Adventure Beign With</h2>
+                            <h2 className="text-2xl  md:text-5xl md:my-8 font-bold text-white">Let the Adventure Beign With</h2>
                             <h1 className="text-4xl md:text-7xl font-bold text-purple-600">Toy Verse Cars</h1>
                             <p className="pt-1 md:pt-6 text-white ">Get ready to embark on a playful journey that will transform your toy store into a destination that kids and kids-at-heart can't wait to visit. Let's dive in and discover the power of simple yet captivating words that will make your toy store stand out!</p>
                         </div>

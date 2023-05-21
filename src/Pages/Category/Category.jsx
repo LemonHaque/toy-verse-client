@@ -39,8 +39,8 @@ const Category = () => {
 
             <Tabs>
 
-                <TabList>
-                    <Tab onClick={handleSportCar}>Sports Car</Tab>
+                <TabList className="font-bold  mx-auto my-8">
+                    <Tab onClick={handleSportCar} >Sports Car</Tab>
                     <Tab onClick={handleNormalCar}>Normal Car</Tab>
                     <Tab onClick={handleSuv}>Suv</Tab>
                 </TabList>
