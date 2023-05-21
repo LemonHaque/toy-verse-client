@@ -14,7 +14,7 @@ module.exports = {
         "@keyframes aos-slide-left": {
           "0%": {
             opacity: 0,
-            transform: "translateX(-150px)",
+            transform: "translateX(-50px)",
           },
           "100%": {
             opacity: 1,
@@ -22,7 +22,7 @@ module.exports = {
           },
         },
         ".aos-animate-slide-left": {
-          animation: "aos-slide-left 10s ease-out",
+          animation: "aos-slide-left 20s ease-out",
         },
       });
     },

@@ -1,8 +1,8 @@
 import Category from "../../Category/Category";
 import Banner from "../Banner/Banner";
 import Gallery from "../Gallery/Gallery";
-import StaticCards from "../StaticCards/StaticCards";
 import AboutUs from "../AboutUs/AboutUs";
+import OurFacilities from "../OurFacilities/OurFacilities";
 
 const Home = () => {
     return (
@@ -11,7 +11,7 @@ const Home = () => {
             <Gallery></Gallery>
             <Category></Category>
             <AboutUs></AboutUs>
-            <StaticCards></StaticCards>
+            <OurFacilities></OurFacilities>
         </div>
     );
 };

@@ -65,7 +65,7 @@ const AddaToy = () => {
                         </label>
                         <label className="input-group">
                             <span></span>
-                            <input type="text" name="picture" placeholder="URL" className="input input-bordered w-full" />
+                            <input type="text" name="picture" placeholder="https://i.ibb.co/ZMnr7ft/car1.jpg" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const AddaToy = () => {
                         </label>
                         <label className="input-group">
                             <span></span>
-                            <input type="text" name="selleremail" placeholder="Seller Email" className="input input-bordered w-full" />
+                            <input type="text" name="selleremail" placeholder="example@email.com" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ const AddaToy = () => {
                         </label>
                         <label className="input-group">
                             <span></span>
-                            <input type="text" name="subcategory" placeholder="Sub Category" className="input input-bordered w-full" />
+                            <input type="text" name="subcategory" placeholder="Sports Car/Normal Car/SUV" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2">
@@ -105,7 +105,7 @@ const AddaToy = () => {
                         </label>
                         <label className="input-group">
                             <span></span>
-                            <input type="text" name="price" placeholder="Price" className="input input-bordered w-full" />
+                            <input type="text" name="price" placeholder="$ Price" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>
@@ -116,7 +116,7 @@ const AddaToy = () => {
                         </label>
                         <label className="input-group">
                             <span></span>
-                            <input type="text" name="rating" placeholder="Rating" className="input input-bordered w-full" />
+                            <input type="text" name="rating" placeholder="1-5 Stars" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2">
@@ -136,7 +136,7 @@ const AddaToy = () => {
                         </label>
                         <label className="input-group">
                             <span></span>
-                            <input type="text" name="details" placeholder="Details" className="input input-bordered w-full" />
+                            <input type="text" name="details" placeholder="Details about the toy" className="input input-bordered w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2">
@@ -145,7 +145,7 @@ const AddaToy = () => {
                         </label>
                         <label className="input-group">
                         <span></span>
-                            <input type="text" name="category" placeholder="Category" className="input input-bordered w-full" />
+                            <input type="text" name="category" placeholder="Sports/Normal/SUV" className="input input-bordered w-full" />
                         </label>
                     </div>
                 </div>

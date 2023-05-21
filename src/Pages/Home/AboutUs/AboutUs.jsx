@@ -1,4 +1,4 @@
-import  { useEffect } from 'react';
+import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import toyImage from '../../../assets/toy1.png';
@@ -22,19 +22,15 @@ const AboutUs = () => {
           <img src={toyImage} alt="Toy" className="w-full h-auto" />
         </div>
         <div data-aos="fade-up" data-aos-delay="200">
-          <h2 className="text-3xl font-bold mb-4">About Us</h2>
-          <p className="text-lg text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            dignissim lectus elit, ac volutpat odio dignissim a. Phasellus
-            sollicitudin commodo turpis vitae bibendum. Nunc vulputate orci ac
-            mauris bibendum, non rutrum dui aliquet. Nulla facilisi.
-          </p>
-          <p className="text-lg text-gray-700">
-            Sed tempus sagittis mi, vitae molestie lectus pulvinar vitae. Ut at
-            cursus nisi. Sed tristique eros non tellus volutpat, vitae rutrum
-            mi interdum. Curabitur dapibus arcu eu urna congue, at varius
-            neque rhoncus. Sed auctor tincidunt sapien, sit amet varius velit
-            rhoncus id.
+          <h2 className="text-4xl text-purple-600 font-bold my-6">About Us</h2>
+          <p className="text-lg">
+            Toy Verse Innovations, a web-based shopping gateway, is a selective and definitive goal for a wide range of toys.
+
+            With a profound want to contact each heart and achieve each home in America, we have right now dedicated every one of our assets to take into account the American market.
+
+            Established by a gathering of energetic visionaries, Toy Verse is altogether equipped to set new benchmarks in the toy business and has plans to be the main pioneer in not so distant future.
+
+            With experts of the exchange locally available, we work to comprehend the brain research and the need of each being so as to convey the correct toy in the correct hands!
           </p>
         </div>
       </div>

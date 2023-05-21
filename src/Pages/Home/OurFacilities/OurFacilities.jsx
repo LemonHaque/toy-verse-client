@@ -3,10 +3,12 @@ import img2 from '../../../assets/cardImage/card2.jpg'
 import img3 from '../../../assets/cardImage/card3.jpg'
 import img4 from '../../../assets/cardImage/card4.jpg'
 
-const StaticCards = () => {
+const OurFacilities = () => {
     return (
         <div className='text-center w-6xl mx-auto  my-20'>
-            <h2 className='text-purple-600 text-5xl font-bold mb-12'>Our Facilities</h2>
+            <h2 className='text-purple-600 text-5xl font-bold mb-6'>Our Facilities</h2>
+            <p className='w-2/3 mx-auto mb-8'>We are very detarmind to give you our best toys. Also you can get money back guarantee,24/7 Customer Service and Free Shipping which are the main service that we gave.Feel free to shopping with us
+            </p>
             <div className='grid md:grid-cols-2 mx-16 md:mx-44 gap-4'>
                 <div className="card pt-8 w-96 shadow-xl bg-yellow-100">
                     <figure><img src={img1} /></figure>
@@ -41,4 +43,4 @@ const StaticCards = () => {
     );
 };
 
-export default StaticCards;
+export default OurFacilities;
